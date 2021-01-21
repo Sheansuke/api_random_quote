@@ -85,7 +85,8 @@ DATABASES = {
         "PASSWORD": "a3e845719e400db00029cf19996d475e7d5519871e952ebe9aee0976b3343f08"
     }
 }
-
+import dj_database_url
+DATABASES['default'] = dj_database_url.config(conn_max_age=600, ssl_require=True)
 
 # Password validation
 # https://docs.djangoproject.com/en/3.1/ref/settings/#auth-password-validators

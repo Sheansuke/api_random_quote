@@ -1,1 +1,1 @@
-web:  python manage.py  runserver
+web:  gunicorn api_random_quote_project.wsgi:application
